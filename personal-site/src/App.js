@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import { Routes, Route } from "react-router-dom";
-import { About } from './pages/about';
+import { Routes, Route, Link } from "react-router-dom";
+import { About } from './pages/About';
 import { WorkExperience } from './pages/WorkExperience';
 import { PersonalProjects } from './pages/PersoalProjects';
 
