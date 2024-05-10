@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/NewProject.css';
 
-export function NewProject() {
+const NewProject = () => {
     return (
         <>
             <form>
@@ -39,3 +39,5 @@ export function NewProject() {
         </>
     );
 }
+
+export default NewProject;

@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, Link } from "react-router-dom";
-import { About } from './pages/About';
-import { WorkExperience } from './pages/WorkExperience';
-import { PersonalProjects } from './pages/PersoalProjects';
-import { NewProject } from "./pages/NewProject";
+import About from './views/About.js';
+import WorkExperience from './views/WorkExperience.js';
+import PersonalProjects from './views/PersoalProjects.js';
+import NewProject from "./views/NewProject.js";
 
 function App() {
   return (
@@ -24,8 +24,6 @@ function App() {
         <Route path="/experience" element={ <WorkExperience/> } />
         <Route path="/projects" element={ <PersonalProjects/> } />
         <Route path="/newprojects" element={ <NewProject/> } />
-
-
       </Routes>
     </>
 
