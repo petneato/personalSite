@@ -1,7 +1,10 @@
+import StackContainer from "../components/stackContainer.js";
+
 const About = () => {
     return(
         <>
             <h1>About</h1>
+            <StackContainer />
         </>
     )
 }

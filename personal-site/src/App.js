@@ -1,9 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, Link } from "react-router-dom";
+
+//View Imports
 import About from './views/About.js';
 import WorkExperience from './views/WorkExperience.js';
 import PersonalProjects from './views/PersoalProjects.js';
 import NewProject from "./views/NewProject.js";
+
+//CSS Imports
+import './App.css';
 
 function App() {
   return (
@@ -14,7 +19,6 @@ function App() {
           <li><Link to="/experience">Work Experience</Link></li>
           <li><Link to="/projects">Personal Projects</Link></li>
           <li><Link to="/newprojects">new</Link></li>
-
 
 
         </ul>
