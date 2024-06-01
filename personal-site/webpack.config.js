@@ -34,6 +34,10 @@ export default {
           use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader', 'postcss-loader'],
+        },
+        {
           test: /\.js$/,
           exclude: /node_modules/,
           use: {
@@ -41,7 +45,7 @@ export default {
             options: {
               presets: [
                 '@babel/preset-env',
-                '@babel/presents-react'
+                '@babel/preset-react'
               ],
             },
           },
@@ -56,7 +60,7 @@ export default {
       new HtmlWebpackPlugin({
         title: 'Webpack App',
         filename: 'index.html',
-        template: 'src/template.html',
+        template: path.resolve(__dirname, 'build/index.html'),
       }),
       // new BundleAnalyzerPlugin(),
     ],

@@ -1,3 +1,6 @@
+import React  from 'react';
+
+
 export const InputField = ({ label, id, type = "text" }) => (
     <>
         <label htmlFor={id}>{label}</label>

@@ -1,3 +1,4 @@
+import React  from 'react';
 import ProjectCard from "../components/projectCard.js";
 
 const WorkExperience = () => {
