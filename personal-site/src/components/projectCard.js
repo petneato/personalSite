@@ -1,7 +1,6 @@
 import React from 'react';
 import StackBox from './StackBox.js'
 
-import '../css/ProjectCard.css';
 
 const ProjectCard = () => {
     return (
