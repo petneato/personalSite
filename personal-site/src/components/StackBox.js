@@ -33,10 +33,10 @@ const MERN = [
 
 const StackBox = () => {
     return (    
-        <div className=" flex-col items-center border-slate-500 border" >
-        {MERN.map((stack, index) => (
-            <StackItem key={index} stack={stack} />
-        ))}
+        <div className=" flex-col items-center inline-block border-slate-500 border-2" >
+            {MERN.map((stack, index) => (
+                <StackItem key={index} stack={stack} />
+            ))}
         </div>
     );
 }
