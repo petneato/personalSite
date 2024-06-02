@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Image imports for testing
 import Mongo from '../../public/images/Mongo.jpg';
 import Express from '../../public/images/express.png';
 import ReactLogo from '../../public/images/react.png';
@@ -8,6 +9,8 @@ import Angular from '../../public/images/angular.png';
 import Vue from '../../public/images/vuejs.jpeg';
 import Django from '../../public/images/next-js-django-4140926669.png';
 import Rails from '../../public/images/Ruby_on_Rails_logo-3872381217.png';
+
+import StackItem from './StackItem.js';
 
 const stacks = [
     { name: 'MongoDB', color: 'bg-green-500', logo: Mongo },
@@ -28,16 +31,11 @@ const MERN = [
 
 ];
 
-
-
 const StackBox = () => {
     return (    
-        <div className="flex flex-col items-center border-slate-500">
+        <div className=" flex-col items-center border-slate-500 border" >
         {MERN.map((stack, index) => (
-            <div key={index} className={`w-48 h-12 flex items-center justify-center ${stack.color} `}>
-            <img src={stack.logo} alt={`${stack.name} logo`} className="h-8 mr-2" />
-            <span className="text-white font-bold">{stack.name}</span>
-            </div>
+            <StackItem key={index} stack={stack} />
         ))}
         </div>
     );
