@@ -11,6 +11,7 @@ import Django from '../../public/images/next-js-django-4140926669.png';
 import Rails from '../../public/images/Ruby_on_Rails_logo-3872381217.png';
 
 import StackItem from './StackItem.js';
+import StackTop from './StackTop.js';
 
 const stacks = [
     { name: 'MongoDB', color: 'bg-green-500', logo: Mongo },
@@ -32,8 +33,8 @@ const MERN = [
 ];
 
 const StackBox = () => {
-    return (    
-        <div className="flex flex-col justify-end bg-zinc-200 border-slate-500 border-2 m-2 mh-full" >
+    return (
+        <div className="flex flex-col justify-end bg-zinc-200 border-slate-500 border-2 m-2 box-border mh-full" >
             {MERN.map((stack, index) => (
                 <StackItem key={index} stack={stack} />
             ))}
