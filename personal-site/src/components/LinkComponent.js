@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const LinkComponent = ({ path, text }) => {
   return (
     <Link to={path}>
-      <button className='bg-slate-400 hover:bg-slate-300 rounded-sm p-2'>
+      <button className='bg-dv-pink hover:bg-slate-300 rounded-sm p-2'>
         {text}
       </button>
     </Link>

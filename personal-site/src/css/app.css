@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-nav {
+/* nav {
   @apply bg-gray-600 text-white;
   flex: auto;
   flex-direction: row;
@@ -25,4 +25,4 @@ nav {
         }
     }
   }
-}
+} */
