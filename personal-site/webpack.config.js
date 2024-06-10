@@ -27,6 +27,12 @@ export default {
       compress: true,
       historyApiFallback: true,
     },
+    resolve: {
+      alias: {
+        '@mui/material': path.resolve(__dirname, 'node_modules/@mui/material'),
+        '@mui/icons-material': path.resolve(__dirname, 'node_modules/@mui/icons-material/esm'),
+      },
+    },
     module: {
       rules: [
         {

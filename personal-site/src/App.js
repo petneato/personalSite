@@ -27,7 +27,7 @@ const App =() => {
           <LinkComponent path='/projects' text='Personal Projects'/>
           <LinkComponent path='/newprojects' text='New Projects'/>
       </nav>
-      <div className='flex flex-col h-screen'> 
+      <div className='flex flex-col h-screen overflow-y-auto bg-dv-lavender'> 
         <Routes>
           <Route path="/" element= { <About/> }/>
           <Route path="/experience" element={ <WorkExperience/> } />
