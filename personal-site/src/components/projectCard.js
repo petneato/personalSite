@@ -2,20 +2,20 @@ import React from 'react';
 import StackBox from './StackBox.js'
 
 
-const ProjectCard = () => {
+const ProjectCard = (name, status, dates, github) => {
     return (
         <div className=" w-[900px] h-[480px] flex bg-dv-green m-20">
             <StackBox />
             <div className="flex flex-col p-4 items-center ">
-                <h3 className='text-white'>Project Name</h3>
+                <h1 className='text-white'>Project Name</h1>
                 <div className='flex flex-row justify-self-start text-white'>
                     <p className='mr-4'>Project Status: Status</p>
                     <p className='mr-4'>Project Dates: Dates</p>
                     <a href="" className=''>GitHub</a>
                 </div>
 
-
-                <p className='bg-zinc-200 align-bottom py-2 px-4 mt-auto'>"TOM!" No answer. "TOM!" No answer. "What's gone with that boy, I wonder? 
+                
+                <p className='bg-zinc-200  align-bottom py-2 px-4 mt-auto bg-opacity-60'>"TOM!" No answer. "TOM!" No answer. "What's gone with that boy, I wonder? 
                     You TOM!" No answer. The old lady pulled her spectacles down and looked 
                     over them about the room; then she put them up and looked out under them. 
                     She seldom or never looked through them for so small a thing as a boy; they 
